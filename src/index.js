@@ -1,17 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import './App.css';
 import * as serviceWorker from './serviceWorker';
+import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
+import Home from './Home'
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
+
+/*using react router we set a constant equal to whatever component
+we would like to render*/
+const routing = (
+  <Router>
+    <Switch>
+      <Route exact path="/App" component={Home}/>
+      <Route exact path="/*" component={Home}/>  
+    </Switch>
+  </Router>
+)
+
+/*the code below reads the path and renders component on a conditional basis.
+i.e. /home throws two different components at different places...*/
+ReactDOM.render(routing, document.getElementById("root"));
 serviceWorker.unregister();

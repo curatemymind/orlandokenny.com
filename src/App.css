@@ -1,38 +1,580 @@
-.App {
-  text-align: center;
+body {
+  font: normal 10px Helvetica, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p {
+  padding-left: 15px;
+  font-size: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.collapseText {
+  padding-left: 15px;
+  font-size: 20px !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+*{
+  margin:0;
+  padding:0;
+}
+
+h1 {
+  font-size: 90px;
+  
+}
+
+
+h6 {
+  font-size: 130px;
+  line-height: 60px;
+}
+
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: all 500ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 1;
+}
+
+.ReactModal__Overlay--after-close {
+  opacity: 0;
+}
+
+
+.contentWrapper {
+  width: auto;
+  max-width: 1200px;
+  height: 700px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.container-fluid {
+  min-width: 600px;
+  width: auto;
+  max-width: 700px;
+  height: auto;
+
+}
+
+img {
+  width: 125px;
+}
+
+button {
+  width: 215px;
+  height: 200px;
+  background-color: transparent;
+  border: none;
+  margin-left: 15px;
+  margin-right: 15px;
+  
+  font-size: 40px;
+  font-weight: bolder;
+  
+}
+
+button:hover {
+  outline-style: solid;
+  outline-color: black;
+  
+}
+
+button:active {
+  color: black;
+}
+
+.icons {
+  position: relative;
+}
+
+.icons-entering {
+  animation-name: iconsFadeIn;
+  animation-duration: 4s;
+}
+
+.icons-entered {
+  background-color: transparent;
+}
+
+@keyframes iconsFadeIn {
+  0% { top: 600px; opacity: 0}
+  50% {opacity: 0;}
+  100% { top: 0px; opacity: 1;}
+}
+
+.name {
+  position: relative;
+}
+
+.name-entering {
+  animation-name: nameFadeIn;
+  animation-duration: 4s;
+}
+
+.name-exiting {
+  animation-name: nameFadeOut;
+  animation-duration: 4s;
+}
+
+.name-exited {
+  opacity: 0;
+}
+
+.closeModal {
+  width: auto;
+  height: auto;
+  background-color: black;
   color: white;
+  padding: 4px;
 }
 
-.App-link {
-  color: #61dafb;
+.closeModal:hover {
+  outline-style: none;
+  color: gray;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.ReactModal__Content--after-open {
+  width: auto;
+  max-width: 1200px;
+  height: auto;
+  max-height: 800px;
+  margin: auto;
+}
+
+
+.contact {
+  width: auto !important;
+  max-width: 350px;
+  font-size: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.social {
+  width: auto !important;
+  max-width: 350px;
+  font-size: 20px;
+}
+
+.contactImg {
+  width: 100px;
+  vertical-align: middle;
+}
+
+.modalMinWidth {
+  margin: 0 auto;
+  width: auto;
+  min-width: none;
+  max-width: 900px;
+}
+
+
+.aboutContainer {
+  margin: 0 auto;
+  max-width: 950px;
+}
+
+.aboutDiv {
+  width: auto;
+  float: left;
+  max-width: 500px;
+}
+
+.headshot {
+  margin-left: 10px;
+  float: right;
+  width: 400px;
+}
+
+/*
+.collapsible {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+}
+
+.Collapsible__trigger
+{
+  width: 30px;
+  font: normal 30px Helvetica, sans-serif;
+  background-color: #5f2d38;
+  padding-left: 10px;
+  padding-right: 10px;
+  
+}
+.Collapsible__contentInner
+{
+  width: auto;
+  max-width: 900px;
+  font: normal 30px Helvetica, sans-serif;
+  background-color: #5f2d38;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.covid-central-trigger
+{
+  width: 30px;
+  font: normal 30px Helvetica, sans-serif;
+  background-color: #7da4ff;
+  padding-left: 10px;
+  padding-right: 10px;
+  
+}
+.covid-central-content
+{
+  width: auto;
+  max-width: 900px;
+  font: normal 30px Helvetica, sans-serif;
+  background-color: #7da4ff;
+  padding-left: 10px;
+  padding-right: 10px;
+}*/
+
+.maxWidthText {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+iframe {
+  width: auto;
+  min-width: 600px;
+  height: auto;
+  min-height: 500px;
+  /*
+  margin: 0 auto;
+  width: 600px;
+  min-width: 600px;
+  height: auto;
+  min-height: 500px;*/
+}
+
+.resume {
+  width: auto;
+  min-width: 1000px;
+  height: 550px;
+}
+.instagram-media-rendered
+{
+  min-height: 850px;
+}
+.insta {
+  min-height: 800px;
+}
+
+.collapsePic {
+  margin: 0 auto;
+  width: auto;
+  max-width: 600px;
+  height: auto;
+}
+
+.collapseSS {
+  margin: 0 auto;
+  padding: 10px;
+  width: auto;
+  max-width: 225px;
+  height: auto;
+  
+}
+
+
+
+@keyframes nameFadeIn {
+  0% { top: 300px;}
+  100% { top: 0px;}
+}
+
+@keyframes nameFadeOut {
+  0% { top: 0px; left: 0px;}
+  100% { top: 200px; left: 200px;}
+}
+
+@media only screen and (min-width: 400px) and (max-width: 600px)
+{
+  .closeModal {
+    width: auto;
+    height: auto;
+    background-color: black;
+    color: white;
+    padding: 2px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .closeModal {
+    width: auto;
+    height: auto;
+    background-color: black;
+    color: white;
+    padding: 2px;
   }
+  .headshot {
+    margin: 0 auto;
+    float: center;
+    width: 350px;
+  }
+  iframe {
+    width: auto;
+    min-width: 30px;
+    min-height: 200px;
+    height: auto;
+    /*
+    margin: 0 auto;
+    width: auto;
+    max-width: 400px;
+    height: auto;
+    */
+  }
+  
+
+.collapseSS {
+  margin: 0 auto;
+  padding: 10px;
+  width: auto;
+  max-width: 225px;
+  height: auto;
+  
+}
+
+  .container-fluid {
+    min-width: 300px;
+    width: auto;
+    max-width: 400px;
+    height: auto;
+  }
+
+  .modalMinWidth {
+    
+    min-width: 200px;
+    max-width: none;
+  }
+  .contentWrapper {
+    min-width: 325px;
+    width: auto;
+    height: auto;
+    max-height: 570px;
+  }
+
+  button {
+    margin: 0 auto;
+    padding-left: auto;
+    padding-right: auto;
+    margin-bottom: 25px;
+    width: 150px;
+    height: auto;
+    font-size: 25px;
+    font-weight: bolder;
+  }
+
+  .contact {
+    width: auto !important;
+    max-width: 350px;
+    font-size: 20px;
+    padding-left: none;
+    padding-right: none;
+  }
+
+  .social {
+    width: auto !important;
+    max-width: 350px;
+    font-size: 20px;
+   
+  }
+
+  
+  img { 
+    width: 100px;
+  }
+
+  .contactImg {
+    width: 75px;
+    vertical-align: middle;
+  }
+  h1{
+    
+    font-size: 60px;
+    
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h6 {
+    font-size: 86px;
+    line-height: 44px;
+  }
+
+  .instagram-media-rendered
+{
+  width: 30px !important;
+  min-height: 745px;
+}
+
+.ReactModal__Content--after-open {
+  width: auto;
+  max-width: 1200px;
+  height: auto;
+  max-height: 800px;
+  margin: 0;
+  top: 0px;
+
+  position: absolute; 
+  top: 0px !important; 
+  left: 0px !important; 
+  right: 0px !important; 
+  bottom: 0px !important;
+}
+
+.collapsePic {
+  margin: 0 auto;
+  width: auto;
+  max-width: 300px;
+  height: auto;
+}
+}
+
+@media only screen and (max-width: 399px)
+{
+
+  p {
+    padding-left: 0px;
+    font-size: 15px;
+  }
+  iframe {
+    width: auto;
+    min-width: 225px;
+    max-width: 240px;
+    height: 250px;
+    /*
+    margin: 0 auto;
+    width: 250px;
+    min-width: 250px;
+    height: auto;
+    min-height: 500px;*/
+  }
+  
+  .headshot {
+    margin-left: none;
+    margin: 0 auto;
+    float: center;
+    width: 325px;
+  }
+
+.collapseSS {
+  margin: 0 auto;
+  padding: 0px;
+  width: auto;
+  max-width: 225px;
+  height: auto;
+  
+}
+
+  .collapsePic {
+    margin: 0 auto;
+    width: auto;
+    max-width: 250px;
+    height: auto;
+  }
+  .hideSmallMobile {
+    display: none;
+  }
+
+  .container-fluid {
+    min-width: 300px;
+    width: auto;
+    max-width: 400px;
+    height: auto;
+  }
+
+  .modalMinWidth {
+    
+    min-width: 200px;
+    max-width: none;
+  }
+  .contentWrapper {
+    min-width: 325px;
+    width: auto;
+    height: auto;
+    max-height: 570px;
+  }
+
+  button {
+    margin: 0 auto;
+    padding-left: auto;
+    padding-right: auto;
+    margin-bottom: 25px;
+    width: 150px;
+    height: auto;
+    font-size: 25px;
+    font-weight: bolder;
+  }
+
+  .contact {
+    width: auto !important;
+    max-width: 350px;
+    font-size: 20px;
+    padding-left: none;
+    padding-right: none;
+  }
+
+  .social {
+    width: auto !important;
+    max-width: 350px;
+    font-size: 20px;
+   
+  }
+
+  
+  img { 
+    width: 100px;
+  }
+
+  .contactImg {
+    width: 75px;
+    vertical-align: middle;
+  }
+  h1{
+    
+    font-size: 60px;
+    
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h6 {
+    font-size: 86px;
+    line-height: 44px;
+  }
+
+  .instagram-media-rendered
+{
+  min-height: 700px;
+}
+
+.ReactModal__Content--after-open {
+  width: auto;
+  max-width: 1200px;
+  height: auto;
+  max-height: 800px;
+  margin: 0;
+  top: 0px;
+
+  position: absolute; 
+  top: 0px !important; 
+  left: 0px !important; 
+  right: 0px !important; 
+  bottom: 0px !important;
+}
 }

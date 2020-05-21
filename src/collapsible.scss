@@ -1,0 +1,185 @@
+// The main container element
+$img: url('../src/media/arrow.png');
+
+//The content within the collaspable area
+.Collapsible__contentInner {
+  padding: 10px;
+  border: 2px solid inherit;
+  border-top: 0;
+
+  p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 20px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+//The link which when clicked opens the collapsable area
+.Collapsible__trigger {
+  font-size: 30px;
+  display: block;
+  font-weight: 400;
+  text-decoration: none;
+  position: relative;
+  border: 2px solid white;
+  padding: 10px;
+  background: transparent;
+  color: white;
+
+
+  &:after {
+    content: '^';
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: block;
+    transition: transform 300ms;
+  }
+
+  &.is-open {
+    &:after {
+      transform: rotateZ(90deg);
+    }
+  }
+
+  &.is-disabled {
+    opacity: 0.5;
+    background-color: grey;
+  }
+}
+
+.creatorConnect-trigger {
+  background-color: #5f2d38;
+  border: 2px solid #5f2d38;
+}
+
+.covid-central-trigger {
+  background-color: #7da4ff;
+  border: 2px solid #7da4ff;
+}
+
+.weAreUpNext-trigger {
+  background-color: gray;
+  border: 2px solid gray;
+}
+
+.wigs-trigger {
+  background-color: #03bb85;
+  border: 2px solid #03bb85;
+}
+
+.creatorConnect-content {
+  border: 2px solid #5f2d38;
+  
+}
+
+
+.covid-central-content {
+  border: 2px solid #7da4ff;
+}
+
+.weAreUpNext-content {
+  border: 2px solid gray;
+}
+
+.wigs-content {
+  border: 2px solid #03bb85;
+}
+
+
+@media only screen and (max-width: 600px)
+{
+  .Collapsible__contentInner {
+    padding: 10px;
+    border: 2px solid black;
+    border-top: 0;
+  
+    p {
+      margin-bottom: 10px;
+      font-size: 14px;
+      line-height: 20px;
+  
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  
+  //The link which when clicked opens the collapsable area
+  .Collapsible__trigger {
+    font-size: 20px;
+    display: block;
+    font-weight: 400;
+    text-decoration: none;
+    color: grey;
+    position: relative;
+    border: 1px solid white;
+    padding: 10px;
+    color: white;
+  
+  
+    &:after {
+      content: '>';
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      display: block;
+      transition: transform 300ms;
+    }
+  
+    &.is-open {
+      &:after {
+        transform: rotateZ(90deg);
+      }
+    }
+  
+    &.is-disabled {
+      opacity: 0.5;
+      background-color: grey;
+    }
+  }
+
+  .creatorConnect-trigger {
+    background-color: #5f2d38;
+    border: 2px solid #5f2d38;
+    
+  }
+  
+  .covid-central-trigger {
+    background-color: #7da4ff;
+    border: 2px solid #7da4ff;
+  }
+  
+  .weAreUpNext-trigger {
+    background-color: gray;
+    border: 2px solid gray;
+  }
+
+  .creatorConnect-content {
+    border: 2px solid #5f2d38;
+    
+  }
+  
+  .covid-central-content {
+    border: 2px solid #7da4ff;
+  }
+  
+  .weAreUpNext-content {
+    border: 2px solid gray;
+  }
+  
+  .wigs-trigger {
+    background-color: #03bb85;
+    border: 2px solid #03bb85;
+  }
+  
+  .wigs-content {
+    border: 2px solid #03bb85;
+  }
+  
+  
+}
