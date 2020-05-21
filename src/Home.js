@@ -27,7 +27,7 @@ const cc2 = require('./media/cc2.PNG')
 const c1 = require('./media/covid1.PNG')
 const c2 = require('./media/covid2.PNG')
 const c3 = require('./media/covid3.PNG')
-const pdf = require('./media/OrlandoKennyResume.pdf')
+const pdf = require('./media/OrlandoKenny_Resume.pdf')
 
 
 
