@@ -338,7 +338,7 @@ class Home extends React.Component {
                           &nbsp;954-778-1065
                   </button>
                 </a>  
-                <a target="_blank" href="https://www.linkedin.com/in/orlando-kenny-918835188/" rel="noopener noreferrer">
+                <a target="_blank" href="https://www.linkedin.com/in/orlando-kenny/" rel="noopener noreferrer">
                   <button className="contact" id="projects">
                           <img id="test" className="contactImg" src={linkedIn} alt="projects"></img>
                           &nbsp;navigate to
