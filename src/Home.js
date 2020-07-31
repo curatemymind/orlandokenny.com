@@ -8,7 +8,7 @@ import Collapsible from 'react-collapsible';
 import ReactGoogleSlides from 'react-google-slides';
 import InstagramEmbed from 'react-instagram-embed';
 import * as Util from './minor/Util'
-import './collapsible.scss';
+import './collapsible.scss'; 
 const contact = require('./media/contact.gif')
 const projects = require('./media/projects.gif')
 const about = require('./media/about.gif')
@@ -28,7 +28,6 @@ const c1 = require('./media/covid1.PNG')
 const c2 = require('./media/covid2.PNG')
 const c3 = require('./media/covid3.PNG')
 const pdf = require('./media/OrlandoKenny_Resume.pdf')
-
 
 
 
