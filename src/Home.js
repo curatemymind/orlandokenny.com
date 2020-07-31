@@ -30,7 +30,6 @@ const c3 = require('./media/covid3.PNG')
 const pdf = require('./media/OrlandoKenny_Resume.pdf')
 
 
-
   
   
 /*This page will display a form that will redirect the user to different views based on their input. 
