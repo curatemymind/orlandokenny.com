@@ -211,6 +211,34 @@ class Home extends React.Component {
                   
                   
                 </Collapsible>
+
+                <Collapsible trigger="Raymond James Financial" open={!isMobile} triggerClassName="raymondJames-trigger" triggerOpenedClassName="raymondJames-trigger" contentInnerClassName="raymondJames-content" >
+                  <div className="maxWidthText">
+                    <p className="collapseText">
+                    Role: Intern
+                    <br></br>
+                    <br></br>
+                    During my time at Raymond James Financial I was tasked with converting a legacy PDF document that contained Key Performance Indicators into a new and interactive dashboard. 
+                    The legacy PDF document was given to managers and the senior vice presidents at the end of every month. My goal became to offer this data in real time. 
+                    In my six weeks at Raymond James I…
+                    <br></br>
+                    <br></br>
+                    <li>Created a drillable month over month view to help TSC Leadership understand the root causes of spikes or dips in metrics over any given month. </li>
+                    <li>Created a summary view intended to help managers quickly visualize the delta of eight different metrics at any given month. </li>
+                    <br></br>
+                    <br></br>
+                    Ultimately, this project ended up being valuable for the firm and a great learning experience for me as it introduced me to the importance of data analysis in large data sets. 
+                    I hope to one day work closer to the databases that store the data I worked with as I am particularly interested in algorithm efficiency and storing large datasets as efficiently as possible. 
+                      <center>
+                      
+                    </center>
+                    </p>
+                  </div>
+
+
+                  
+                </Collapsible>
+
                 <Collapsible trigger="CreatorConnect" open={!isMobile} triggerClassName="creatorConnect-trigger" triggerOpenedClassName="creatorConnect-trigger" contentInnerClassName="creatorConnect-content" >
                   <div className="maxWidthText">
                     <p className="collapseText">
