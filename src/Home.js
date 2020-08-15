@@ -28,6 +28,9 @@ const c1 = require('./media/covid1.PNG')
 const c2 = require('./media/covid2.PNG')
 const c3 = require('./media/covid3.PNG')
 const pdf = require('./media/OrlandoKenny_Resume.pdf')
+const legacy = require('./media/ex0.png')
+const ex1 = require('./media/ex1.png')
+const ex2 = require('./media/ex2.png')
 
 
   
@@ -229,10 +232,22 @@ class Home extends React.Component {
                     <br></br>
                     Ultimately, this project ended up being valuable for the firm and a great learning experience for me as it introduced me to the importance of data analysis in large data sets. 
                     I hope to one day work closer to the databases that store the data I worked with as I am particularly interested in algorithm efficiency and storing large datasets as efficiently as possible. 
-                      <center>
-                      
-                    </center>
+                    <br></br>
+                    <br></br>
+                    Below is the dashboard that I created:
                     </p>
+                    <img className="collapsePic" src={ex1}></img>
+                    <br></br>
+                    <br></br>
+                    <img className="collapsePic" src={ex2}></img>
+                    <br></br>
+                    <br></br>
+                    <p className="collapseText">
+                      And here is the original PDF report:
+                      <img className="collapsePic" src={legacy}></img>
+
+                    </p>
+                  
                   </div>
 
 
