@@ -244,6 +244,7 @@ class Home extends React.Component {
                       <br></br>
                       <br></br>
                     </center>
+                    <br></br>
                       <p className="collapseText">
                         And here is the original PDF report:
                       </p>
