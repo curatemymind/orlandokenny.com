@@ -236,18 +236,21 @@ class Home extends React.Component {
                     <br></br>
                     Below is the dashboard that I created:
                     </p>
-                    <img className="collapsePic" src={ex1}></img>
-                    <br></br>
-                    <br></br>
-                    <img className="collapsePic" src={ex2}></img>
-                    <br></br>
-                    <br></br>
-                    <p className="collapseText">
-                      And here is the original PDF report:
+                    <center>
+                      <img className="collapsePic" src={ex1}></img>
+                      <br></br>
+                      <br></br>
+                      <img className="collapsePic" src={ex2}></img>
+                      <br></br>
+                      <br></br>
+                    </center>
+                      <p className="collapseText">
+                        And here is the original PDF report:
+                      </p>
+                    <center>
                       <img className="collapsePic" src={legacy}></img>
-
-                    </p>
-                  
+                    </center>
+                    
                   </div>
 
 
