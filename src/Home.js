@@ -33,7 +33,9 @@ const ex1 = require('./media/ex1.png')
 const ex2 = require('./media/ex2.png')
 
 
-  
+function timeout(delay) {
+  return new Promise( res => setTimeout(res, delay) );
+}
   
 /*This page will display a form that will redirect the user to different views based on their input. 
 It functions with React states and react Redirects*/
@@ -94,25 +96,25 @@ class Home extends React.Component {
     {
       maxWidth = 250;
     }
+    timeout(10000)
 
     return (   
       <div className="contentWrapper"> {/* DO NOT REMOVE THIS DIV COMPONENT*/}
        <center>
-       <Transition timeout={4000} in={true} appear>
-        {(status) => (
-          <div  className={`name name-${status}`}>
+            <br></br>
+            <br></br>
+        
             <h1>ORLANDO</h1>
             <h6>KENNY</h6>
-          </div> )
-          }
+         
           
-        </Transition>
+        
             <br></br>
             <br></br>
             
-              <Transition timeout={8000} in={true} appear>
-                {(status) => (
-                  <Container fluid className={`icons icons-${status}`}>
+              
+                
+                  <Container fluid >
                     <br></br>
                     <br></br>
                     <a href={pdf} target="_blank">
@@ -138,9 +140,9 @@ class Home extends React.Component {
                     ABOUT
                   </button>
                 </Container>
-                )}
                 
-              </Transition>
+                
+             
             
             {/*mobile modals*/}
             
