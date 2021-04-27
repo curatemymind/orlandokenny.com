@@ -28,6 +28,10 @@ const c1 = require('./media/covid1.PNG')
 const c2 = require('./media/covid2.PNG')
 const c3 = require('./media/covid3.PNG')
 const pdf = require('./media/OrlandoKenny_Resume.pdf')
+const inDepth = require('./media/In-Depth Analysis (Sense of Self, Orlando Kenny).pdf')
+const sos1 = require('./media/sos1.PNG')
+const sos2 = require('./media/sos2.PNG')
+const sos3 = require('./media/sos3.PNG')
 const legacy = require('./media/ex0.png')
 const ex1 = require('./media/ex1.png')
 const ex2 = require('./media/ex2.png')
@@ -167,7 +171,39 @@ class Home extends React.Component {
               <button onClick={this.handleCloseModal} className="closeModal">CLOSE</button>
               <br></br>
               <br></br>
-              <Container fluid className="modalMinWidth">  
+              <Container fluid className="modalMinWidth">
+              <Collapsible trigger="Sense of Self" open={!isMobile} triggerClassName="sos-trigger" triggerOpenedClassName="sos-trigger" contentInnerClassName="sos-content" >
+                  <div className="maxWidthText">
+                    <p className="collapseText">
+                    In November of 2020, I launched Sense of Self Speakers. The goal was to offer an alternative to the everyday-use, mass produced speakers that we are accustomed to buying.
+                    <br></br><br></br>
+                    Before I began prototyping the speakers I took a small course on acoustics to better understand how speakers work and how the sound that we hear is created. After this, I devised a process using laser cutting, 3D printing, and sautering that allowed me to create completely customizable sealed speaker enclosures from scratch. I source every speaker component individually and I have designed the enclosure to be an optimal size that maximizes speaker performance and resonant frequency while minimizing distortion. 
+                    <br></br><br></br>
+                    After standardizing my process, I decided to build a web store that could support my business. With my technical knowledge in React I was able to deploy a web store that functions in an entirely dynamic matter, relying on Stripe as its payment processing method. Everything on the site was made from scratch as it proved to be more cost effective. Once this was done, I published the site and began creating a brand around it. Since its release, I’ve sold ten speakers while amassing thousands of site visits and hundreds of followers. 
+                    I look forward to continuing to innovate and optimize my process. 
+                      <br></br>
+                      <br></br>
+                      <a target="_blank" href="https://covid19-central.com/">sosspeakers.com</a>
+                      <br></br>
+                      <br></br>
+                      <a href={inDepth} target="_blank">In-Depth Site Analysis</a>
+                      <br></br>
+                      <br></br>
+                      <a target="_blank" href="https://github.com/orlandokennycs/sosspeakers.com">Github Repository</a>
+                      <br></br>
+                      <br></br>
+                    </p>
+</div>
+                    <center>
+                      
+                      <img className="collapseSS" src={sos1}></img>
+                      <img className="collapseSS" src={sos2}></img>
+                      <img className="collapseSS" src={sos3}></img>
+                    </center>
+                    
+                  
+                  
+                </Collapsible>  
                 <Collapsible trigger="Covid-Central" open={!isMobile} triggerClassName="covid-central-trigger" triggerOpenedClassName="covid-central-trigger" contentInnerClassName="covid-central-content" >
                   <div className="maxWidthText">
                     <p className="collapseText">
@@ -183,6 +219,7 @@ class Home extends React.Component {
                     <br></br>
                     This was done in an effort to succintly provide you the type of content that you would like to see. Although a lot of the pages are automated and update themselves, 
                     the articles and resources that have an emotion "flair" have been carefully hand picked by our research team. 
+                    This project showed me how frameworks like React allow for the quick development of web applications. As a result, I was interviewed by author Mary Stewart and I will be featured in her next book, <i>Creative Inquiry: From Ideation to Implementation</i>.
                     <br></br>
                       <br></br>
                       <a target="_blank" href="https://covid19-central.com/">covid19-central.com</a>
@@ -276,13 +313,10 @@ class Home extends React.Component {
                       <li>Uses ReactJS to dynamically render HTML components based on the endpoint’s response.</li>
                       <li>Uses CSS techniques to allow for access and compatibility on all devices.</li>
                       <br></br>
-                      Due to the outbreak of the COVID-19 virus we decdied to put the project on hold and work on Covid-Central.
-                      We decided that it would be best to continue with the rollout of this application in the Fall of 2020. 
-                      Once we get back, we will launch the app to a small pilot group and when we assess their feedback we will 
-                      continue to work on the app for six more weeks before launching it to the public.
+                      Due to the outbreak of the COVID-19 virus, the team dissolved but I am currently finishing up the project on my own and I am packaging it so that it is digestible and the next set of interns can work on adding important features to the site.
                       <br></br>
                       <br></br>
-                      <a target="_blank" href="https://creatorconnect.netlify.app/">CreatorConnect Beta</a>
+                      <a target="_blank" href="https://creatorconnect.netlify.app/">CreatorConnect Beta (Backend Not Active at the moment)</a>
                       <br></br>
                       <br></br>
                       <a target="_blank" href="https://github.com/FSUInnovationHub/CreatorConnect">Github Repository</a>
@@ -421,19 +455,27 @@ class Home extends React.Component {
                 <br></br>
                 <p>
                 Hey! 
-                My name is Orlando Kenny and I am currently a junior pursuing a Bachelor of Science in Computer Science degree at the Florida State University. 
-                I am pursuing this degree with the hope of one day using innovation to provide the proper tools and technology to those that do not have access to them because of socioeconomic factors. 
+                My name is Orlando Kenny and I just finished my undergraduate studies with a Bachelor of Science in Computer Science at the Florida State University. 
+                I am currently looking for an opportunity to either study or work in the field of Innovation!
                 <br></br>
                 <br></br>
-                In the summer of 2017, I founded We Are Up Next! Robotics, a service project that taught Panamanian students the basics of engineering and robotics. Since then, I have been actively working towards one day continuing this initiative on a much larger scale. 
+                I would love to be able to apply my techincal skills in an Innovative atmospehere full of emerging technologies. I even have some experience to show for it! In my time at Florida State, I became
+                deeply involved with both the FSU Innovation Hub and the Tallahassee Community College Center for Innovation.
                 <br></br>
                 <br></br>
-                I am also involved in other projects that can be found under my “projects” tab. My strong suits are my curiosity and my willingness to learn and delve into projects that may be overwhelming at first. I am passionate about being able to apply the knowledge that I have obtained to computer software. 
+                In my time as a computer programming intern at the FSU Innovation Hub I learned modern web development through React and deployed a host of sites that can be found in my projects tab.
+                In my time at the TCC Innvoation Center I worked to create my own business (<a href="https://www.sosspeakers.com" target="_blank">sosspeakers.com</a>), but more importantly I helped the Innovation Center Director foster a collaborative community 
+                by introducing the Center to over 20 students from different disciplines. 
                 <br></br>
                 <br></br>
-                My greatest personal accomplishment came this spring, covid-central. In a matter of five weeks I organized, worked on, and oversaw the development of a web app from idea to implementation. 
-                The purpose of the project was to quickly deploy a service where users could get reliable information regarding the outbreak of the Covid-19 virus. This project showed me the power of open source software, as we relied on APIs for content like statistics.
-                More importantly, it showed me how frameworks like React.js allow for the quick development of web applications. I am currently working on personal projects to expand my understanding of Computer Science, and I am always open to new challenges! 
+                My greatest personal accomplishment came in the Spring of 2019, covid-central (<a href="https://www.covid19.central.com" target="_blank">covid19-central.com</a>). In a matter of five weeks I organized, worked on, and oversaw the development of a web app from idea to implementation. 
+                The purpose of Covid-Central was to quickly deploy a service where users could get reliable information regarding the outbreak of the Covid-19 virus. This project showed me the power of open source software, as we relied on APIs for content like statistics.
+                <br></br>
+                <br></br>
+                More importantly, it showed me how frameworks like React allow for the quick development of web applications. As a result, I was interviewed by author Mary Stewart and I will be featured in her next book, <i>Creative Inquiry: From Ideation to Implementation</i>.
+                <br></br>
+                <br></br>
+                As I previously mentioned, my love resides in Innovation!
                 <br></br>
                 <br></br>
                 Best,

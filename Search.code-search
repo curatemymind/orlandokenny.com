@@ -1,0 +1,58 @@
+# Query: node-sass
+# Flags: RegExp
+# ContextLines: 1
+
+17 results - 1 file
+
+package-lock.json:
+     14          "@testing-library/user-event": "^7.2.1",
+     15:         "sass": "^4.14.1",
+     16          "pure-react-carousel": "^1.27.1",
+
+  10448      },
+  10449:     "node_modules/sass": {
+  10450        "version": "4.14.1",
+  10451:       "resolved": "https://registry.npmjs.org/sass/-/sass-4.14.1.tgz",
+  10452        "integrity": "sha512-sjCuOlvGyCJS40R8BscF5vhVlQjNN069NtQ1gSxyK1u9iqvn6tf7O1R4GNowVZfiZUCRt5MmMs1xd+4V/7Yr0g==",
+
+  10472        "bin": {
+  10473:         "node-sass": "bin/sass"
+  10474        },
+
+  10478      },
+  10479:     "node_modules/sass/node_modules/ansi-regex": {
+  10480        "version": "2.1.1",
+
+  10486      },
+  10487:     "node_modules/sass/node_modules/ansi-styles": {
+  10488        "version": "2.2.1",
+
+  10494      },
+  10495:     "node_modules/sass/node_modules/chalk": {
+  10496        "version": "1.1.3",
+
+  10509      },
+  10510:     "node_modules/sass/node_modules/cross-spawn": {
+  10511        "version": "3.0.1",
+
+  10518      },
+  10519:     "node_modules/sass/node_modules/lru-cache": {
+  10520        "version": "4.1.5",
+
+  10527      },
+  10528:     "node_modules/sass/node_modules/strip-ansi": {
+  10529        "version": "3.0.1",
+
+  10538      },
+  10539:     "node_modules/sass/node_modules/supports-color": {
+  10540        "version": "2.0.0",
+
+  10546      },
+  10547:     "node_modules/sass/node_modules/yallist": {
+  10548        "version": "2.1.2",
+
+  26476      },
+  26477:     "sass": {
+  26478        "version": "4.14.1",
+  26479:       "resolved": "https://registry.npmjs.org/sass/-/sass-4.14.1.tgz",
+  26480        "integrity": "sha512-sjCuOlvGyCJS40R8BscF5vhVlQjNN069NtQ1gSxyK1u9iqvn6tf7O1R4GNowVZfiZUCRt5MmMs1xd+4V/7Yr0g==",

@@ -77,6 +77,11 @@ $img: url('../src/media/arrow.png');
   border: 2px solid #03bb85;
 }
 
+.sos-trigger {
+  background-color: #9e84ae;
+  border: 2px solid #9e84ae;
+}
+
 .creatorConnect-content {
   border: 2px solid #5f2d38;
   
@@ -98,6 +103,14 @@ $img: url('../src/media/arrow.png');
   border: 2px solid #03bb85;
 }
 
+.wigs-content {
+  border: 2px solid #03bb85;
+}
+
+
+.sos-content {
+  border: 2px solid #9e84ae;
+}
 
 @media only screen and (max-width: 600px)
 {
