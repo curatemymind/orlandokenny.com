@@ -183,7 +183,7 @@ class Home extends React.Component {
                     I look forward to continuing to innovate and optimize my process. 
                       <br></br>
                       <br></br>
-                      <a target="_blank" href="https://covid19-central.com/">sosspeakers.com</a>
+                      <a target="_blank" href="https://sosspeakers.com/">sosspeakers.com</a>
                       <br></br>
                       <br></br>
                       <a href={inDepth} target="_blank">In-Depth Site Analysis</a>
